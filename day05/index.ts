@@ -47,6 +47,7 @@ import { readFile } from "fs/promises";
 			crates.push(crate)
 		}
 
+		// reverse for challenge 2, remove reverse for challenge 1
 		crates.reverse()
 		stacks[<keyof typeof stacks>destination].push(...crates)
 	}
